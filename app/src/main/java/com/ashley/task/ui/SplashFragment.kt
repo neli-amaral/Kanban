@@ -1,4 +1,4 @@
-package com.thiago.task.ui
+package com.ashley.task.ui
 
 import android.os.Bundle
 import android.os.Handler
@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.thiago.task.R
-import com.thiago.task.databinding.FragmentSplashBinding
+import com.ashley.task.R
+import com.ashley.task.databinding.FragmentSplashBinding
 
 
 class SplashFragment : Fragment() {

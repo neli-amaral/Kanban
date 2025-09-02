@@ -1,4 +1,4 @@
-package com.thiago.task.ui
+package com.ashley.task.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.thiago.task.R
-import com.thiago.task.data.model.Status
-import com.thiago.task.data.model.Task
-import com.thiago.task.databinding.FragmentTodoBinding
-import com.thiago.task.ui.adapter.TaskAdapter
+import com.ashley.task.R
+import com.ashley.task.data.model.Status
+import com.ashley.task.data.model.Task
+import com.ashley.task.databinding.FragmentTodoBinding
+import com.ashley.task.ui.adapter.TaskAdapter
 
 
 class TodoFragment : Fragment() {

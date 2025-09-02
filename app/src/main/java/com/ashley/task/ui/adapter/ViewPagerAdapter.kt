@@ -1,4 +1,4 @@
-package com.thiago.task.ui.adapter
+package com.ashley.task.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

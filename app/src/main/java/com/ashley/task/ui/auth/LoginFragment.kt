@@ -1,4 +1,4 @@
-package com.thiago.task.ui.auth
+package com.ashley.task.ui.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.thiago.task.R
-import com.thiago.task.databinding.FragmentLoginBinding
-import com.thiago.task.util.showBottomSheet
+import com.ashley.task.R
+import com.ashley.task.databinding.FragmentLoginBinding
+import com.ashley.task.util.showBottomSheet
 
 class LoginFragment : Fragment() {
 

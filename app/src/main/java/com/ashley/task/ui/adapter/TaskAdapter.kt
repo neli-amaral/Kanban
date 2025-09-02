@@ -1,4 +1,4 @@
-package com.thiago.task.ui.adapter
+package com.ashley.task.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.thiago.task.R
-import com.thiago.task.data.model.Status
-import com.thiago.task.data.model.Task
-import com.thiago.task.databinding.ItemTaskBinding
+import com.ashley.task.R
+import com.ashley.task.data.model.Status
+import com.ashley.task.data.model.Task
+import com.ashley.task.databinding.ItemTaskBinding
 
 class TaskAdapter(
     private val context: Context,
