@@ -88,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:indeterminateTint="@color/white"
+            android:indeterminateTint="@color/outros_detalhes"
             android:visibility="invisible"
             tools:visibility="visible" />
     </LinearLayout>
@@ -97,7 +97,7 @@
         android:id="@+id/textViewNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ashley Gabriela Ribeiro Jesus"
+        android:text="Annelise Bispo Amaral"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

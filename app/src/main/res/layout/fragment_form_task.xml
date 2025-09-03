@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:navigationIcon="@drawable/baseline_arrow_back_24"
+            app:navigationIcon="@drawable/botao_voltar"
             android:paddingTop="40dp">
             <TextView
                 android:layout_width="wrap_content"
@@ -79,13 +79,14 @@
                     android:text="@string/a_fazer_radiobutton"
                     android:checked="true"
                     android:layout_weight="1"
+                    android:buttonTint="@color/outros_detalhes"
                     android:theme="@style/MyRadioButton"
                     android:textColor="@color/white"/>
                 <RadioButton
                     android:layout_width="88dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/rbDoing"
-                    android:buttonTint="@color/black"
+                    android:buttonTint="@color/outros_detalhes"
                     android:layout_weight="1"
                     android:text="@string/fazendo_radiobutton"
                     android:theme="@style/MyRadioButton"
@@ -95,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/rbDone"
                     android:layout_weight="1"
-                    android:buttonTint="@color/black"
+                    android:buttonTint="@color/outros_detalhes"
                     android:text="@string/feita_radiobutton"
                     android:theme="@style/MyRadioButton"
                     android:textColor="@color/white"/>
@@ -120,27 +121,15 @@
                 android:id="@+id/progressBar"
                 android:layout_marginTop="8dp"
                 android:layout_gravity="center"
-                android:indeterminateTint="@color/white"
+                android:indeterminateTint="@color/outros_detalhes"
                 android:visibility="invisible"
                 app:layout_editor_absoluteX="152dp"
                 app:layout_editor_absoluteY="278dp"
                 tools:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/buttonSave"/>
-
-            <TextView
-                android:id="@+id/textViewNome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ashley Gabriela Ribeiro Jesus"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
-
+                app:layout_constraintTop_toBottomOf="@id/buttonSave"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

@@ -21,7 +21,7 @@
             android:id="@+id/tabs"
             android:layout_width="0dp"
             android:layout_height="70dp"
-            android:background="#009688"
+            android:background="@color/outros_detalhes"
             android:contentDescription="Tabs"
             android:elevation="0dp"
             app:tabTextAppearance="@style/CustomTabLayout"
@@ -31,17 +31,16 @@
             app:layout_constraintEnd_toStartOf="@+id/btnLogout"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnLogout"
-                android:layout_marginStart="40dp"
-                android:background="#009688"
-                android:contentDescription="Logout"
-                android:padding="24dp"
-                android:src="@drawable/baseline_logout_24"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:background="@color/outros_detalhes"
+            android:contentDescription="Logout"
+            android:padding="24dp"
+            android:src="@drawable/botao_logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.viewpager2.widget.ViewPager2
