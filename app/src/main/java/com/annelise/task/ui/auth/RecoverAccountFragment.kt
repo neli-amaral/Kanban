@@ -1,4 +1,4 @@
-package com.ashley.task.ui
+package com.annelise.task.ui.auth
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,13 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.ashley.task.R
-import com.ashley.task.databinding.FragmentFormTaskBinding
-import com.ashley.task.util.initToolbar
-import com.ashley.task.util.showBottomSheet
+import com.annelise.task.R
+import com.annelise.task.databinding.FragmentRecoverAccountBinding
+import com.annelise.task.util.initToolbar
+import com.annelise.task.util.showBottomSheet
 
-class FormTaskFragment : Fragment() {
-    private var _binding: FragmentFormTaskBinding? = null
+class RecoverAccountFragment : Fragment() {
+
+    private var _binding: FragmentRecoverAccountBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -20,8 +21,7 @@ class FormTaskFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
-        _binding = FragmentFormTaskBinding.inflate(inflater, container, false)
+        _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -31,17 +31,16 @@ class FormTaskFragment : Fragment() {
         initListener()
     }
     private fun initListener(){
-        binding.buttonSave.setOnClickListener {
+        binding.buttonEnviar.setOnClickListener{
             valideData()
         }
     }
-
     private fun valideData(){
-        val description = binding.editTextDescricao.text.toString().trim()
-        if (description.isNotBlank()){
+        val email = binding.editTextEmail.text.toString().trim()
+        if(email.isNotBlank()){
             Toast.makeText(requireContext(),"Tudo OK!", Toast.LENGTH_SHORT).show()
         }else{
-            showBottomSheet(message = getString(R.string.description_empty_form_task_fragment))
+            showBottomSheet(message = getString(R.string.email_empty))
         }
     }
 

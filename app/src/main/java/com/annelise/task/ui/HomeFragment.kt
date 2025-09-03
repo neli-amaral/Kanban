@@ -1,13 +1,13 @@
-package com.ashley.task.ui
+package com.annelise.task.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.ashley.task.R
-import com.ashley.task.databinding.FragmentHomeBinding
-import com.ashley.task.ui.adapter.ViewPagerAdapter
+import com.annelise.task.R
+import com.annelise.task.databinding.FragmentHomeBinding
+import com.annelise.task.ui.adapter.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 

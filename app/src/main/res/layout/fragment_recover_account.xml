@@ -85,8 +85,25 @@
                 android:layout_marginTop="8dp"
                 android:visibility="invisible"
                 tools:visibility="visible"/>
+
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Annelise Bispo Amaral"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/linearlayout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout2" />
+
     </LinearLayout>
+
+
 
 
 

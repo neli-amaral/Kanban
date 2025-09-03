@@ -1,4 +1,4 @@
-package com.ashley.task.ui
+package com.annelise.task.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ashley.task.R
-import com.ashley.task.data.model.Status
-import com.ashley.task.data.model.Task
-import com.ashley.task.databinding.FragmentDoneBinding
-import com.ashley.task.ui.adapter.TaskAdapter
+import com.annelise.task.R
+import com.annelise.task.data.model.Status
+import com.annelise.task.data.model.Task
+import com.annelise.task.databinding.FragmentDoneBinding
+import com.annelise.task.ui.adapter.TaskAdapter
 
 class DoneFragment : Fragment() {
 

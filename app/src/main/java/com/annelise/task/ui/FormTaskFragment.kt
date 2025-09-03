@@ -1,4 +1,4 @@
-package com.ashley.task.ui.auth
+package com.annelise.task.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,14 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.ashley.task.R
-import com.ashley.task.databinding.FragmentRecoverAccountBinding
-import com.ashley.task.util.initToolbar
-import com.ashley.task.util.showBottomSheet
+import com.annelise.task.R
+import com.annelise.task.databinding.FragmentFormTaskBinding
+import com.annelise.task.util.initToolbar
+import com.annelise.task.util.showBottomSheet
 
-class RecoverAccountFragment : Fragment() {
-
-    private var _binding: FragmentRecoverAccountBinding? = null
+class FormTaskFragment : Fragment() {
+    private var _binding: FragmentFormTaskBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -21,7 +20,8 @@ class RecoverAccountFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRecoverAccountBinding.inflate(inflater, container, false)
+        // Inflate the layout for this fragment
+        _binding = FragmentFormTaskBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -31,16 +31,17 @@ class RecoverAccountFragment : Fragment() {
         initListener()
     }
     private fun initListener(){
-        binding.buttonEnviar.setOnClickListener{
+        binding.buttonSave.setOnClickListener {
             valideData()
         }
     }
+
     private fun valideData(){
-        val email = binding.editTextEmail.text.toString().trim()
-        if(email.isNotBlank()){
+        val description = binding.editTextDescricao.text.toString().trim()
+        if (description.isNotBlank()){
             Toast.makeText(requireContext(),"Tudo OK!", Toast.LENGTH_SHORT).show()
         }else{
-            showBottomSheet(message = getString(R.string.email_empty))
+            showBottomSheet(message = getString(R.string.description_empty_form_task_fragment))
         }
     }
 

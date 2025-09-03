@@ -1,4 +1,4 @@
-package com.ashley.task.ui
+package com.annelise.task.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,15 +8,16 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.ashley.task.R
-import com.ashley.task.data.model.Status
-import com.ashley.task.data.model.Task
-import com.ashley.task.databinding.FragmentDoingBinding
-import com.ashley.task.ui.adapter.TaskAdapter
+import com.annelise.task.R
+import com.annelise.task.data.model.Status
+import com.annelise.task.data.model.Task
+import com.annelise.task.databinding.FragmentTodoBinding
+import com.annelise.task.ui.adapter.TaskAdapter
 
-class DoingFragment : Fragment() {
 
-    private var _binding: FragmentDoingBinding? = null
+class TodoFragment : Fragment() {
+
+    private var _binding: FragmentTodoBinding? = null
     private val binding get() = _binding!!
 
     private lateinit var taskAdapter: TaskAdapter
@@ -26,7 +27,7 @@ class DoingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentDoingBinding.inflate(inflater,container,false)
+        _binding = FragmentTodoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -67,18 +68,16 @@ class DoingFragment : Fragment() {
             TaskAdapter.SELECT_NEXT -> {
                 Toast.makeText(requireContext(), "Próximo", Toast.LENGTH_SHORT).show()
             }
-            TaskAdapter.SELECT_BACK -> {
-                Toast.makeText(requireContext(), "Anterior", Toast.LENGTH_SHORT).show()
-            }
         }
     }
+
     private fun getTask() {
         val taskList = listOf(
-            Task("0", "Desenvolvimento Mobile de Tela Inicial", Status.DOING),
-            Task("1","Desenvolvimento Web de Tela Inicial", Status.DOING),
-            Task("2","Pesquisa Sobre Segurança Web", Status.DOING),
-            Task("3", "Prototipagem de Sistema Web", Status.DOING),
-            Task("4","Desenvolvimento de Tela de Boas-Vindas ao Sistema", Status.DOING),
+            Task("0", "Criar Kanban do Projeto",Status.TODO),
+            Task("1","Criar Backlog do Projeto",Status.TODO),
+            Task("2","Fazer Pesquisa do Projeto",Status.TODO),
+            Task("3", "Implementar Banco de Dados",Status.TODO),
+            Task("4","Implementar Segurança",Status.TODO),
         )
         taskAdapter.submitList(taskList)
     }

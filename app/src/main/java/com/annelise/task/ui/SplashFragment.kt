@@ -1,4 +1,4 @@
-package com.ashley.task.ui
+package com.annelise.task.ui
 
 import android.os.Bundle
 import android.os.Handler
@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.ashley.task.R
-import com.ashley.task.databinding.FragmentSplashBinding
+import com.annelise.task.R
+import com.annelise.task.databinding.FragmentSplashBinding
 
 
 class SplashFragment : Fragment() {
