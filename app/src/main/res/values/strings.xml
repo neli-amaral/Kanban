@@ -20,7 +20,7 @@
     <string name="text_button_recover_login_fragment">Recuperar conta</string>
 
     <string name="email_empty_register_fragment">Preencha um e-mail válido.</string>
-    <string name="password_empty_register_gragment">Preencha uma senha.</string>
+    <string name="password_empty_register_fragment">Preencha uma senha.</string>
     <string name="text_button_register_fragment">Enviar</string>
     <string name="text_title_toolbar_register_fragment">Criar conta</string>
 

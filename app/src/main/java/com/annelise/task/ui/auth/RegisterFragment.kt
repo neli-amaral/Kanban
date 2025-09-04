@@ -45,7 +45,7 @@ class RegisterFragment : Fragment() {
             if (senha.isNotBlank()) {
                 findNavController().navigate(R.id.action_global_homeFragment)
             } else {
-                showBottomSheet(message = getString(R.string.password_empty_register_gragment))
+                showBottomSheet(message = getString(R.string.password_empty_register_fragment))
             }
         }else{
             showBottomSheet(message = getString(R.string.email_empty_register_fragment))

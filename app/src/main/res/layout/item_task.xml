@@ -32,7 +32,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Criar layout da tela de login do app" />
+                tools:text="Prototipar Sistema Web" />
 
 
             <ImageButton

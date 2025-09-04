@@ -28,13 +28,15 @@ class TaskAdapter(
 
         private val DIFF_CALBACK = object : DiffUtil.ItemCallback<Task>() {
             override fun areItemsTheSame(
-                oldItem: Task, newItem: Task
+                oldItem: Task,
+                newItem: Task
             ): Boolean {
                 return oldItem.id == newItem.id && oldItem.description == newItem.description
             }
 
             override fun areContentsTheSame(
-                oldItem: Task, newItem: Task
+                oldItem: Task,
+                newItem: Task
             ): Boolean {
                 return oldItem == newItem && oldItem.description == newItem.description
             }
