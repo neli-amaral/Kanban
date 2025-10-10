@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "575935194313",
+    "project_id": "taskapp-d32ee",
+    "storage_bucket": "taskapp-d32ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575935194313:android:3086d9f9951bf7f482d918",
+        "android_client_info": {
+          "package_name": "com.annelise.task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqoeyyNUT7eavoCeheJEMn4Xpkh7EVBEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

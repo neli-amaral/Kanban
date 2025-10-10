@@ -10,11 +10,14 @@ import com.annelise.task.R
 import com.annelise.task.databinding.FragmentRegisterBinding
 import com.annelise.task.util.initToolbar
 import com.annelise.task.util.showBottomSheet
+import com.google.firebase.auth.FirebaseAuth
 
 class RegisterFragment : Fragment() {
 
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater,
