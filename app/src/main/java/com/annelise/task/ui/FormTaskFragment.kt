@@ -83,7 +83,7 @@ class FormTaskFragment : Fragment() {
             validateData()
         }
 
-        binding.radioGroup.setOnCheckedChangeListener { _binding, id -> status =
+        binding.radioGroup.setOnCheckedChangeListener { _, id -> status =
             when(id){
                 R.id.rbTodo -> Status.TODO
                 R.id.rbDoing -> Status.DOING
@@ -95,13 +95,17 @@ class FormTaskFragment : Fragment() {
     private fun validateData(){
         val description = binding.editTextDescricao.text.toString().trim()
         if (description.isNotBlank()){
+        binding.progressBar.isVisible = true
 
-            if (newTask) task = Task(" ", " ", status )
-            task.id = reference.database.reference.push().key ?: ""
-            task.description = description
-            task.status = status
+            if (newTask) {
+              val id = reference.database.reference.push().key?: ""
+                val description = description
+                val status = status
+                task = Task(id, description, status)
 
-            saveTask()
+                saveTask()
+            }
+
         }else{
             showBottomSheet(message = getString(R.string.description_empty_form_task_fragment))
         }

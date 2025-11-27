@@ -10,16 +10,15 @@
         android:name="com.annelise.task.ui.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
+
         <action
             android:id="@+id/action_splashFragment_to_autentication"
-            app:destination="@id/autentication"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/autentication"/>
+
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/homeFragment"/>
+
     </fragment>
     <navigation android:id="@+id/autentication"
         app:startDestination="@id/loginFragment">
@@ -52,9 +51,7 @@
 
         <action
             android:id="@+id/action_global_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/loginFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/homeFragment"/>
 
     </navigation>
 
@@ -70,9 +67,7 @@
 
         <action
             android:id="@+id/action_homeFragment_to_autentication"
-            app:destination="@id/autentication"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true"/>
+            app:destination="@id/autentication" />
     </fragment>
 
     <fragment

@@ -50,7 +50,7 @@ class RegisterFragment : Fragment() {
             if (senha.isNotBlank()) {
                 binding.progressbar.isVisible=true
                 registerUser(email, senha)
-                findNavController().navigate(R.id.action_global_homeFragment)
+
             } else {
                 showBottomSheet(message = getString(R.string.password_empty_register_fragment))
             }
@@ -58,7 +58,6 @@ class RegisterFragment : Fragment() {
             showBottomSheet(message = getString(R.string.email_empty_register_fragment))
         }
     }
-
 
     private fun registerUser(email: String, password: String){
         try {
@@ -71,6 +70,7 @@ class RegisterFragment : Fragment() {
                         findNavController().navigate(R.id.action_global_homeFragment)
                     }else{
                         //mensagem de erro para cadastro do usuário
+                        binding.progressbar.isVisible = false
                         Toast.makeText(requireContext(), task.exception?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
