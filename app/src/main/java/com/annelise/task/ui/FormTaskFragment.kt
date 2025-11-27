@@ -82,6 +82,14 @@ class FormTaskFragment : Fragment() {
         binding.buttonSave.setOnClickListener {
             validateData()
         }
+
+        binding.radioGroup.setOnCheckedChangeListener { _binding, id -> status =
+            when(id){
+                R.id.rbTodo -> Status.TODO
+                R.id.rbDoing -> Status.DOING
+                else -> Status.DONE
+            }
+        }
     }
 
     private fun validateData(){

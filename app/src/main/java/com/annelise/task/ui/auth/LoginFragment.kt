@@ -52,7 +52,10 @@ class LoginFragment : Fragment() {
         val senha = binding.editTextSenha.text.toString().trim()
         if(email.isNotBlank()) {
             if (senha.isNotBlank()) {
+
                 binding.progressbar.isVisible=true
+                loginUser(email, senha)
+
                 findNavController().navigate(R.id.action_global_homeFragment)
             } else {
                 showBottomSheet(message = getString(R.string.password_empty))
